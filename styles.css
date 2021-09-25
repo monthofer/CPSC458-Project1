@@ -1,0 +1,62 @@
+
+/* Used to create grid layout and center all the text*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 
+        1fr
+        min(90ch, 100%)
+        1fr;
+    color:rgb(255, 159, 204);
+    border: 1px black;
+    background-color: rgb(252, 242, 255);
+}
+
+* {
+    text-align: center;
+}
+
+/* Used to put two collumns of black space on above grid and center the text*/
+.wrapper > * {
+    grid-column: 2;
+}
+
+/* Used to draw a line uder the header */
+.line {
+    border-bottom: 3px solid;
+    display: block;
+}
+
+/* */
+.myImage {
+    float: right;
+    height: 220px;
+    width: 200px;
+}
+
+/* Make bullet points centerd with text*/
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* All of these Classes give each section a different color*/
+.about-section {
+    color:rgb(190, 138, 238);
+}
+
+.work-experience {
+    color:rgb(145, 205, 233);
+}
+
+.education {
+    color: rgb(109, 202, 109);
+}
+
+.projects {
+    color: rgb(196, 199, 43);
+}
+
+.contacts {
+    color: rgb(236, 192, 71);
+}
+
